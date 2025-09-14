@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: 'Vazirmatn', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    direction: ltr;
+}
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    width: 60px;
+    height: auto;
+}
+
+h1, h2, h3 {
+    margin: 0.5rem 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.intro, .social {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #2e7d32;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.social a:hover {
+    color: #1b5e20;
+}
+
+button#lang-toggle {
+    background-color: #fff;
+    color: #2e7d32;
+    border: 2px solid #2e7d32;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button#lang-toggle:hover {
+    background-color: #2e7d32;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2e7d32;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
