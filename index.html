@@ -7,47 +7,64 @@
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: 'Vazirmatn', Arial, sans-serif; }
+        body { 
+            font-family: 'Vazirmatn', Arial, sans-serif; 
+            background: linear-gradient(135deg, #e6f0fa 0%, #d9e6f2 100%); 
+            backdrop-filter: blur(5px);
+        }
         [dir="rtl"] { direction: rtl; text-align: right; }
+        .glass {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        header, section, footer {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        header:hover, section:hover, footer:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800 min-h-screen flex flex-col">
-    <header class="bg-gradient-to-r from-green-500 to-green-600 text-white py-6 px-4 sm:px-6 flex justify-between items-center shadow-lg">
+<body class="min-h-screen flex flex-col text-gray-800">
+    <header class="bg-gradient-to-r from-teal-500 to-emerald-600 text-white py-6 px-4 sm:px-6 flex justify-between items-center glass shadow-lg">
         <div class="flex items-center space-x-4">
             <img src="assets/miyagi-do-logo.png" alt="Miyagi-Do Logo" class="w-16 h-16 object-contain">
             <h1 class="text-2xl sm:text-3xl font-bold en">Miyagi-Do Team</h1>
             <h1 class="text-2xl sm:text-3xl font-bold fa hidden">تیم میاگی-دو</h1>
         </div>
-        <button id="lang-toggle" class="bg-white text-green-800 border-2 border-green-800 px-4 py-2 rounded-lg hover:bg-green-800 hover:text-white transition duration-300">فارسی</button>
+        <button id="lang-toggle" class="bg-white/30 text-teal-800 border-2 border-teal-800 px-4 py-2 rounded-lg hover:bg-teal-800 hover:text-white transition duration-300">فارسی</button>
     </header>
     <main class="max-w-4xl mx-auto px-4 sm:px-6 py-8 flex-grow">
-        <section class="intro bg-white rounded-lg shadow-lg p-6 mb-6">
-            <h2 class="text-xl sm:text-2xl font-semibold text-green-800 en">Welcome to Miyagi-Do</h2>
-            <h2 class="text-xl sm:text-2xl font-semibold text-green-800 fa hidden">خوش آمدید به میاگی-دو</h2>
-            <p class="mt-4 text-gray-600 en">
+        <section class="intro glass p-6 mb-6">
+            <h2 class="text-xl sm:text-2xl font-semibold text-teal-800 en">Welcome to Miyagi-Do</h2>
+            <h2 class="text-xl sm:text-2xl font-semibold text-teal-800 fa hidden">خوش آمدید به میاگی-دو</h2>
+            <p class="mt-4 text-gray-700 en">
                 Inspired by the legendary <em>Karate Kid</em> movies and <em>Cobra Kai</em> series, 
                 Miyagi-Do is a passionate Discord Team dedicated to teamwork, discipline, 
                 and the spirit of karate. Join us to connect, learn, and grow!
             </p>
-            <p class="mt-4 text-gray-600 fa hidden">
+            <p class="mt-4 text-gray-700 fa hidden">
                 با الهام از فیلم‌های افسانه‌ای <em>پسر کاراته‌کار</em> و سریال <em>کبرا کای</em>، 
                 میاگی-دو یک تیم دیسکورد پرشور است که به کار تیمی، انضباط و روح کاراته اختصاص دارد. 
                 به ما بپیوندید تا ارتباط برقرار کنید، یاد بگیرید و رشد کنید!
             </p>
         </section>
-        <section class="social bg-white rounded-lg shadow-lg p-6">
-            <h3 class="text-lg sm:text-xl font-semibold text-green-800 en">Join Our Community</h3>
-            <h3 class="text-lg sm:text-xl font-semibold text-green-800 fa hidden">به جامعه ما بپیوندید</h3>
+        <section class="social glass p-6">
+            <h3 class="text-lg sm:text-xl font-semibold text-teal-800 en">Join Our Community</h3>
+            <h3 class="text-lg sm:text-xl font-semibold text-teal-800 fa hidden">به جامعه ما بپیوندید</h3>
             <ul class="mt-4 flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 justify-center">
                 <li>
-                    <a href="https://github.com/optywine" target="_blank" class="flex items-center space-x-2 text-green-800 hover:text-green-600 transition duration-300">
+                    <a href="https://github.com/optywine" target="_blank" class="flex items-center space-x-2 text-teal-800 hover:text-emerald-600 transition duration-300">
                         <img src="https://img.icons8.com/material-outlined/24/15803b/github.png" alt="GitHub Icon">
                         <span class="en">Team Owner's GitHub</span>
                         <span class="fa hidden">گیت‌هاب مالک تیم</span>
                     </a>
                 </li>
                 <li>
-                    <a href="https://discord.gg/p680-1243699715271561246" target="_blank" class="flex items-center space-x-2 text-green-800 hover:text-green-600 transition duration-300">
+                    <a href="https://discord.gg/p680-1243699715271561246" target="_blank" class="flex items-center space-x-2 text-teal-800 hover:text-emerald-600 transition duration-300">
                         <img src="https://img.icons8.com/material-outlined/24/15803b/discord-logo.png" alt="Discord Icon">
                         <span class="en">Join Our Discord Server</span>
                         <span class="fa hidden">به سرور دیسکورد ما بپیوندید</span>
@@ -56,7 +73,7 @@
             </ul>
         </section>
     </main>
-    <footer class="bg-gradient-to-r from-green-800 to-green-600 text-white text-center py-4">
+    <footer class="bg-gradient-to-r from-teal-800 to-emerald-600 text-white text-center py-4 glass">
         <p class="en">&copy; 2025 Miyagi-Do Team. All rights reserved.</p>
         <p class="fa hidden">&copy; ۱۴۰۴ تیم میاگی-دو. تمامی حقوق محفوظ است.</p>
     </footer>
